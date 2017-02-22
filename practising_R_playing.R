@@ -43,7 +43,11 @@ dev.off()
 mean(ctrl_firing[ ,2])
 
 #learning box plots
+<<<<<<< HEAD
 boxplot(Fmu_firing[ ,2], col="cyan")
+=======
+boxplot(Fmu_firing[ ,2], col="red")
+>>>>>>> e3e647e715852c4e6d8e1c43cd819a8d19aab247
 boxplot(ctrl_firing[ ,2])
 
 #can you add two box plots together?
@@ -64,6 +68,7 @@ ms_to_min <- function(time) {
   return(time)
 }
 
+<<<<<<< HEAD
 #combine two columns of Vm data from 2 separate files
 dim(Fmu_firing)
 dim(ctrl_firing)
@@ -79,4 +84,6 @@ boxplot(ombined, las = 2, names = c("4-MU", "Ctrl"))
 
 #boxplot specifying names of x , with colors for each and axis title labels 
 boxplot(ombined, las = 1, names = c("4-MU", "Ctrl"), col = c("royalblue2", "blue"), ylab = 'Vm (mV)', xlab = 'Treatment')
+=======
+>>>>>>> e3e647e715852c4e6d8e1c43cd819a8d19aab247
 
